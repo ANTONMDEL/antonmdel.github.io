@@ -75,6 +75,17 @@ strong {
   cursor: pointer;
 }
 
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+}
+
+.logoNav {
+  width: 130px;
+  height: 70px;
+}
+
 /* ESTILOS PORTADA */
 .portada {
   display: flex;
@@ -204,37 +215,28 @@ strong {
 }
 
 /* GRILLAS BOOTSTRAP INDEX */
-/* TESTIMONIOS */
-/* VIDEOS Y LIBROS*/
-/* WhatsAPP */
-/* CURSOS */
-.container {
+.containerDos {
   background-image: url(../img/fondoCinco.png);
-  text-align: center;
-  padding: 2px;
-  width: 100%;
-  height: calc(100vh - 55px);
-  background-color: white;
-  font-size: 15px;
 }
 
-.container * {
+.containerDos * {
   box-sizing: border-box;
 }
 
-#testimonios {
-  text-align: center;
+.containerDos a:link {
+  color: #343759;
 }
 
-.sectionMeditacion {
-  display: flex;
-  align-content: center;
+.containerDos a:visited {
+  color: #343759;
 }
 
-.sectionMeditacion p {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
+a:active {
+  color: #343759;
+}
+
+a:hover {
+  color: #343759;
 }
 
 iframe {
@@ -272,6 +274,18 @@ iframe {
   margin-top: 16px;
 }
 
+/* CURSOS */
+.sectionMeditacion {
+  display: flex;
+  align-content: center;
+}
+
+.sectionMeditacion p {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+
 #tituloReikiLunar {
   text-align: center;
   text-shadow: 0.1em 0.1em 0.1em white;
@@ -297,8 +311,12 @@ iframe {
   margin: 2%;
 }
 
-.curso h3 {
+.h3 {
   font-size: 20px;
+}
+
+.h3__2 {
+  align-items: center;
 }
 
 #temarioCurso {
@@ -319,8 +337,17 @@ iframe {
 
 #tituloMeditacion {
   text-align: center;
-  text-shadow: 0.1em 0.1em 0.1em white;
+  text-shadow: 0.1em 0.2em 0.2em white;
+  padding-top: 30px;
   font-size: 39px;
+}
+
+.linea {
+  border-top: 2px solid #343759;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 5px auto 0 auto;
 }
 
 #temarioCursoMeditacion {
@@ -375,8 +402,11 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
+  float: right;
+  position: relative;
+  margin-right: 35%;
+  width: 100px;
+  top: -30px;
   border-radius: 30%;
   animation: 13s infinite alternate ease-in-out spin;
 }
@@ -385,6 +415,7 @@ iframe {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  position: absolute;
   box-shadow: 5px 5px 0 #f1c40f;
 }
 
@@ -489,96 +520,48 @@ iframe {
   border-radius: .25em;
 }
 
-/*GRID*/
-/* TARJETA DE REGALO */
-.grillaDos {
-  justify-content: space-around;
-}
-
-.grillaDos p {
-  font-size: 40px;
-  font-family: fantasy;
-}
-
-.grillaDos > .header {
-  background: #fff;
-  padding: 40px;
-  border: 1px solid #000000;
-  grid-column: 1/-1;
-  background-color: #ffffff;
-  color: #1e272e;
-}
-
-.grillaDos > div {
-  background: #fff;
-  padding: 40px;
-  border: 1px solid #000000;
-}
-
-.grillaDos > .related-post {
-  background: #2d3436;
-  color: #ffffff;
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-
-.grillaDos > .related-post:hover {
-  cursor: pointer;
-  color: #343759;
-  background: #f7f1e3;
-}
-
+/* VIDEOS Y LIBROS*/
 .grilla {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  width: 90%;
-  margin: 1.6em auto;
-  gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.grilla > .header {
-  background: #fff;
-  padding: 40px;
-  grid-column: 1/-1;
-  background-color: "url(//img/fondoCinco.png)";
-  color: #ffffff;
-}
-
-.grilla > div {
-  background-image: "url(//img/fondoCinco.png)";
-  padding: 40px;
-}
-
-.grilla > .related-post {
-  background: #343759;
-  height: 180px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  transition: all 0.5s ease;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
-.grilla > .related-post:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #3c6382;
+.grilla .grilla__texto {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #343759;
 }
 
+.youtube {
+  width: 400px;
+  height: 200px;
+}
+
+/* TARJETA DE REGALO */
 #regalo {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-top: 1px;
   width: 240px;
   float: right;
   height: 400px;
   margin: 1%;
   margin-right: 49px;
+}
+
+.osito {
+  display: flex;
+  flex-direction: row;
+}
+
+#ObteneRegalo {
+  padding: 30px 0px 0px 19px;
+  color: #ecf0f1;
 }
 
 .carro {
@@ -600,7 +583,7 @@ iframe {
 
 .card-logo {
   width: 65px;
-  margin-left: 10px;
+  margin-left: 1px;
 }
 
 .product-detail {
@@ -608,18 +591,19 @@ iframe {
   flex-direction: column;
   justify-content: flex-start;
   align-content: stretch;
-  padding: 0px 20px;
+  padding: 0px 2px;
   font-size: 13px;
-  color: #fff;
+  color: #ecf0f1;
 }
 
 .product-detail h2 {
-  font-size: 17px;
+  width: 160px;
+  align-content: flex-start;
+  font-size: 19px;
   font-weight: 500;
   letter-spacing: 1px;
-  padding-bottom: 0px;
-  padding-left: 50px;
-  padding-top: 0px;
+  padding-top: 27px;
+  padding-left: 0px;
 }
 
 .back-text {
@@ -628,7 +612,8 @@ iframe {
   font-weight: 900;
   margin-left: 10px;
   margin-top: 12px;
-  opacity: 0.1;
+  opacity: 0.2;
+  text-align: center;
 }
 
 .product-title {
@@ -717,25 +702,29 @@ iframe {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  width: 60%;
+  width: 90%;
   padding-top: 1%;
-  padding-left: 61px;
+  padding-left: 0px;
   padding-bottom: 10px;
   align-content: flex-start;
 }
 
+.a {
+  width: 150%;
+}
+
 /* TABLA DE PRECIOS CURSOS */
 .contenedorQ {
-  width: 50%;
-  max-width: 900px;
-  margin: auto;
-  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding-top: 0px;
-  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .queryBox {
+    zoom: 80%;
+    padding-left: 55px;
+  }
 }
 
 .tabla {
@@ -781,7 +770,7 @@ iframe {
 .botonObtene {
   display: inline-block;
   width: 100px;
-  padding: 15px;
+  padding: 20px;
   background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
   text-decoration: none;
   color: #343759;
@@ -825,8 +814,6 @@ iframe {
   }
 }
 
-/* COLOR DE ETIQUETAS A */
-/* TESTIMONIOS */
 @keyframes load {
   from {
     left: -100%;
@@ -859,7 +846,7 @@ a:hover {
 }
 
 .completo__h2 {
-  padding-left: 517px;
+  text-align: center;
   color: #343759;
 }
 
@@ -930,6 +917,10 @@ a:hover {
   color: #343759;
   text-align: center;
   margin-left: 160px;
+}
+
+.ustedes {
+  margin-left: 22px;
 }
 
 .switch {
@@ -1061,6 +1052,7 @@ a:hover {
 /* Video*/
 .video-container {
   height: 60vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1068,6 +1060,12 @@ a:hover {
 @media (min-width: 600px) {
   .video-container {
     height: 100vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video-container {
+    width: 100%;
   }
 }
 
@@ -1355,7 +1353,6 @@ textarea:focus ~ .barra::before {
 }
 
 .globe {
-  margin: 0em 0em 0em 50rem;
   position: relative;
   display: inline-block;
   width: 110px;
@@ -1459,6 +1456,91 @@ textarea:focus ~ .barra::before {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1188px) {
+  .lunaLu {
+    margin-right: 31%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .lunaLu {
+    margin-right: 27%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lunaLu {
+    margin-right: 27%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lunaLu {
+    margin-right: 23%;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .lunaLu {
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .lunaLu {
+    margin-right: 17%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .lunaLu {
+    margin-right: 18%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .lunaLu {
+    margin-right: 14%;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .lunaLu {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .lunaLu {
+    margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .lunaLu {
+    margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .lunaLu {
+    margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lunaLu {
+    margin-right: -5%;
+  }
+}
+
+/* LUNA 
+@media screen and (min-width:1000px){
+	.luna{
+		margin-right: 15%;
+	}
+}
+*/
 /* FOOTER */
 footer {
   background-image: url(/Coder/img/fondoCinco.png);
@@ -1488,14 +1570,199 @@ footer {
   background-size: cover;
 }
 
-.logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 250px;
+.cursoMargin {
+  margin: 60px;
 }
 
-.logoNav {
-  width: 130px;
-  height: 70px;
+.bloquesIndex {
+  padding: 0px 5px 0px 5px;
+}
+
+/* testimo */
+table {
+  border-collapse: collapse !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+@media only screen and (max-width: 639px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .centerClass {
+    margin: 0 auto !important;
+  }
+  .imgClass {
+    width: 100% !important;
+    height: auto;
+  }
+  .wrapper {
+    width: 320px;
+    padding: 0 !important;
+  }
+  .header {
+    width: 320px;
+    padding: 0 !important;
+    background-image: url(http://placehold.it/320x400) !important;
+  }
+  .container {
+    width: 300px;
+    padding: 0 !important;
+  }
+  .mobile {
+    width: 300px;
+    display: block;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .mobile50 {
+    width: 300px;
+    padding: 0 !important;
+    text-align: center;
+  }
+  *[class="mobileOff"] {
+    width: 0px !important;
+    display: none !important;
+  }
+  *[class*="mobileOn"] {
+    display: block !important;
+    max-height: none !important;
+  }
+}
+
+/* Slider */
+.sliderFallback:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+
+a#rotator img {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+}
+
+a#rotator img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}
+
+.sliderFallback {
+  animation: disapear 10s infinite;
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#slider_theme.activeSlider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100px;
+  height: auto;
+}
+
+#slider_theme.activeSlider .control {
+  position: relative;
+  left: 0px;
+  white-space: nowrap;
+  animation: slider-navigate 10s infinite;
+  animation: slider-navigate 10s infinite;
+  font-size: 0px;
+  width: 100%;
+}
+
+#slider_theme .control img {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#slider_theme .control img:first-child {
+  width: 100%;
+}
+
+#slider_theme.activeSlider .control img {
+  animation: show-width 10s infinite;
+}
+
+@keyframes show-width {
+  0% {
+    width: 25%;
+    max-width: 25%;
+  }
+  100% {
+    width: 25%;
+    max-width: 25%;
+  }
+}
+
+@keyframes slider-navigate {
+  0% {
+    left: 0%;
+    display: block;
+    width: 400%;
+  }
+  12% {
+    left: 0%;
+  }
+  34% {
+    left: -100%;
+  }
+  46% {
+    left: -100%;
+  }
+  68% {
+    left: -200%;
+  }
+  80% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+    width: 400%;
+  }
+}
+
+body[yahoo] #slider_theme .control img {
+  display: none;
+}
+
+body[yahoo] #slider_theme .control img:first-child {
+  display: block !important;
+}
+
+.mobileOff {
+  height: 100px;
+  display: block;
+}
+
+.tablete {
+  height: 60%;
+  margin-bottom: 10%;
+  width: 100%;
 }
 /*# sourceMappingURL=estilos.css.map */
